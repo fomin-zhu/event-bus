@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: cicd-runner
+
+server:
+  error:
+    include-stacktrace: always
+    include-exception: true
+  port: 9090
