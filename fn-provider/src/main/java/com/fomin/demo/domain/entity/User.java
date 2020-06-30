@@ -1,4 +1,4 @@
-package com.fomin.demo.model.entity;
+package com.fomin.demo.domain.entity;
 
 /**
  * @author fomin

@@ -1,5 +1,6 @@
 package com.fomin.demo.repo;
 
+import org.aspectj.apache.bcel.generic.RET;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -8,4 +9,9 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public class ProductRepository {
+
+    public long insert(String name) {
+        System.out.println("insert product " + name);
+        return 10;
+    }
 }

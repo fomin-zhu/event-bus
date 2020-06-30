@@ -1,7 +1,7 @@
-package com.fomin.demo.model.event;
+package com.fomin.demo.domain.event;
 
 import com.fomin.demo.guaua.BaseEvent;
-import com.fomin.demo.model.entity.User;
+import com.fomin.demo.domain.entity.User;
 
 /**
  * @author fomin

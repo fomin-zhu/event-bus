@@ -1,7 +1,7 @@
-package com.fomin.demo.model.event;
+package com.fomin.demo.domain.event;
 
 import com.fomin.demo.ddd.DomainEvent;
-import com.fomin.demo.model.entity.Product;
+import com.fomin.demo.domain.entity.Product;
 
 import java.time.Instant;
 

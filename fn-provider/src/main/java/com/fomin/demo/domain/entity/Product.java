@@ -1,8 +1,7 @@
-package com.fomin.demo.model.entity;
+package com.fomin.demo.domain.entity;
 
 import com.fomin.demo.ddd.BaseEntity;
-import com.fomin.demo.listener.ProductListener;
-import com.fomin.demo.model.event.ProductEvent;
+import com.fomin.demo.domain.event.ProductEvent;
 import com.fomin.demo.repo.ProductRepository;
 
 /**
@@ -12,10 +11,17 @@ import com.fomin.demo.repo.ProductRepository;
 public class Product extends BaseEntity<Long, ProductRepository> {
     private String name;
 
-    public Product(Long id, ProductRepository repo, ProductListener listener) {
+    public Product(Long id, ProductRepository repo) {
         super(id, repo);
-        subscribe(ProductEvent.class, listener);
     }
+
+
+    public void create(ProductEvent event) {
+        // getRepo()
+        System.out.println("create product.");
+        publish(event);
+    }
+
 
     public void setName(String name) {
         this.name = name;

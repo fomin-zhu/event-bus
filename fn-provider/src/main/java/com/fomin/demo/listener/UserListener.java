@@ -1,6 +1,6 @@
 package com.fomin.demo.listener;
 
-import com.fomin.demo.model.event.UserEvent;
+import com.fomin.demo.domain.event.UserEvent;
 import com.fomin.demo.publisher.UserPublisher;
 import com.google.common.eventbus.Subscribe;
 import org.springframework.beans.factory.annotation.Autowired;
